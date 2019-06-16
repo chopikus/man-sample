@@ -35,6 +35,8 @@ apt-get install texlive-xetex
 ```
 xelatex sample.tex
 ```
+
+Получился файл sample.pdf!
 ## Установка Times New Roman/ошибка компиляции из-за шрифта
 Если у Вас при компиляции появляется ошибка вида:
 
