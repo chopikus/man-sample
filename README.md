@@ -37,12 +37,15 @@ xelatex sample.tex
 ```
 ## Установка Times New Roman/ошибка компиляции из-за шрифта
 Если у Вас при компиляции появляется ошибка вида:
+
 ```
 the font Times New Roman cannot be found blah-blah
-```, 
-то этот дурацкий шрифт нужно еще и установить (скажите спасибо мелко-мягким).
+```
+
+, то этот дурацкий шрифт нужно еще и установить (скажите спасибо мелко-мягким).
 
 Пример установки для Дебиан-Подобных ОС (Ubuntu и прочий мусор)
+
 ```
 wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb
 dpkg -i ttf-mscorefonts-installer_3.6_all.deb
