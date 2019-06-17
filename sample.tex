@@ -1,9 +1,11 @@
-\documentclass[14pt]{extarticle}
+\documentclass[a4paper, 14pt]{article}
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Times New Roman}
 \usepackage[russian, ukrainian, english]{babel}
 \usepackage{extsizes}
 \usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tocloft}
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -14,7 +16,7 @@
  }
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
-
+\pagestyle{myheadings}
 \begin{document}
 \begin{titlepage}
 \begin{center}
@@ -22,14 +24,12 @@
 Департамент науки і освіти Харківської облдержадміністрації\\
 Харківське територіальне відділення МАН України\\
 \end{center}
-\par\null\par\null\par
-\hfill
-\begin{tabular}{@{}l@{}}
+\par\null\par
+\begin{changemargin}{10cm}{0cm}
 Відділення: комп'ютерних наук\\
-Секція: комп'ютерні системи та
-мережі
-\end{tabular}
-\par\null\par\null\par
+Секція: комп'ютерні системи та мережі
+\end{changemargin}
+\par\null\par
 \begin{center}
 РОЗРОБКА МЕТОДА ВИПРАВЛЕННЯ, ЯК НЕЗАЛЕЖНИХ, ТАК І ГРУПОВИХ
 ПОМИЛОК, ЩО ВИНИКАЮТЬ ПРИ ОБМІНІ ІНФОРМАЦІЄЮ В
@@ -49,15 +49,20 @@
 \begin{changemargin}{10cm}{0cm}
 Науковий керівник:\\
 Руккас Кирило Маркович,\\
-доцент Харківського\\
+професор кафедри теоретичної та\\
+прикладної інформатики\\
+механіко-математичного\\
+факультету Харківського\\
 національного університету\\
-імені В.Н.Каразіна, кандидат\\
-технічних наук
+ім. В.Н. Каразіна, доктор\\
+технічних наук, доцент\\
 \vspace*{\fill}
 \end{changemargin}
 \begin{center}
 Харків -- 2014 
 \end{center}
 \end{titlepage}
-А МЫ УЖЕ НА 2 СТРАНИЧКЕ!1!
+\setstretch{1.3}
+\setcounter{page}{2}
+Nam congue neque eu molestie varius. Curabitur gravida lobortis orci id dignissim. Mauris eget dui leo. Suspendisse a sem ac sapien lobortis eleifend non viverra neque. Fusce laoreet elit eu ornare malesuada. Etiam ut tincidunt risus, id eleifend ipsum. Cras laoreet est id vestibulum gravida. Ut malesuada arcu diam, ut convallis quam rhoncus sed. Donec ut augue viverra, commodo urna at, sagittis arcu.
 \end{document}
