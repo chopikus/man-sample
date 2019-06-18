@@ -26,9 +26,7 @@
  right=2cm	
 } %отступы
 
-
 \renewcommand{\thesection}{РОЗДІЛ \arabic{section}} %Здесь мы меняем просто номер раздела на "РОЗДІЛ"+номер
-
 \titleformat{\section}[display]{\filcenter}{\thesection. }{0pt}{\MakeUppercase} %Ставим название раздела по середине, делаем его КАПСЛОКОМ и переносим его на следующую строку
 
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} %чиним номер подраздела
@@ -37,7 +35,6 @@
 \makeatletter
 \renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
 \makeatother %точечки в содержании
-
 
 
 %начиная отсюда сложная штука для того, чтобы номер страницы был справа сверху на всех страничках
@@ -60,6 +57,8 @@
 
 
 \begin{document}
+
+\setcounter{secnumdepth}{3}
 
 \thispagestyle{empty}
 
@@ -123,9 +122,13 @@
 
 \tableofcontents %генерация содержания
 
-\newpage %ну и дальше ваш ман
-\section{Перша секція}
+\newpage
+\addcontentsline{toc}{section}{ВСТУП} %добавляем страницу ВСТУП в содержание
+\section*{\textbf{ВСТУП}}
+Ваш ВСТУП
+\newpage %ну и дальше Ваш ман
+\section{Основна частина}
 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-\subsection{Перша субсекція}
+\subsection{Субсекція}
 
 \end{document}
