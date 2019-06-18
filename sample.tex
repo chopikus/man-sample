@@ -1,6 +1,5 @@
 \documentclass[a4paper, 14pt]{article}
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX]{Times New Roman}
 \usepackage[russian, ukrainian, english]{babel}
 \usepackage{extsizes}
 \usepackage{geometry}
@@ -15,6 +14,7 @@
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
 
+\setmainfont[Ligatures=TeX]{Times New Roman}
 \selectlanguage{ukrainian}
 
 \geometry{
@@ -52,30 +52,28 @@
 \renewcommand{\footrulewidth}{0pt}
 }
 \pagestyle{fancy}
-%сложная штука для того, чтобы номер страницы был справа сверху на всех страничках
+%конец сложной штуки для того, чтобы номер страницы был справа сверху на всех страничках
 
 
 
 \begin{document}
 
-\setcounter{secnumdepth}{3}
-
-\thispagestyle{empty}
+\thispagestyle{empty} %чтобы номер страницы в титулке не показывался
 
 \begin{center}
-Міністерство освіти і науки України\\
+Міністерство освіти і науки України\\ % 2 бэкслеша - новая строка
 Департамент науки і освіти Харківської облдержадміністрації\\
 Харківське територіальне відділення МАН України\\
 \end{center}
 
-\par\null\par
+\par\null\par % расстояние в 2 интервала
 
 \begin{changemargin}{10cm}{0cm}
 Відділення: комп'ютерних наук\\
 Секція: комп'ютерні системи та мережі
 \end{changemargin}
 
-\par\null\par
+\par\null\par % расстояние в 2 интервала
 
 \begin{center}
 РОЗРОБКА МЕТОДА ВИПРАВЛЕННЯ, ЯК НЕЗАЛЕЖНИХ, ТАК І ГРУПОВИХ
@@ -83,10 +81,10 @@
 КОМП'ЮТЕРНИХ МЕРЕЖАХ
 \end{center}
 
-\par\null\par\null\par\null
+\par\null\par\null\par\null %расстояние в 3 интервала
 
 \begin{changemargin}{10cm}{0cm}
-Роботу виконав:\\
+Роботу виконав:\\ 
 Волков Юрій Володимирович,\\
 учень 10 класу Харківського\\
 Навчально-виховного комплексу\\
@@ -129,6 +127,22 @@
 \newpage %ну и дальше Ваш ман
 \section{Основна частина}
 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-\subsection{Субсекція}
+\subsection{Подраздел}
+\newpage
+\section{очень-очень-очень-очень-очень-очень-очень-очень длинное название раздела (такое бывает)}
+\newpage
+\addcontentsline{toc}{section}{СПИСОК ВИКОРИСТАНИХ ДЖЕРЕЛ} 
+\section*{СПИСОК ВИКОРИСТАНИХ ДЖЕРЕЛ}
+Филлипс Б. Android. Программирование для профессионалов [Текст]: Б. Филлипс, К. Стюарт, К. Марсикано; Издательский дом «Питер», Держ. акад. керів. кадрів культури і мистецтв. – С-Пб. : 2017. - 688 с.: іл., табл.
+Клифтон Ян. Проектирование пользовательского интерфейса в Android [Текст]: навч. посіб./Ян Клифтон.ДМК Пресс–М.: ДМК Пресс, 2017. - 452 с.
 
+\begin{center}ІНТЕРНЕТ-РЕСУРСИ\end{center}
+https://ru.wikipedia.org/\\
+https://developer.android.com/\\
+https://docs.microsoft.com/en-us/windows/uwp/\\
+https://www.usb3.com/whitepapers/USB\%203\%200\%20(11132008)-final.pdf\\
+https://www.pjrc.com/teensy/beta/usb20.pdf\\
+http://www.those.ch/designtechnik/wp-content/uploads/2014/08/USB-Type-C-Specification-Release-1.0.pdf\\
+https://docs.microsoft.com/en-us/windows/uwp/security/companion-device-unlock\\
+https://github.com/adorsys/secure-storage-android\\
 \end{document}
