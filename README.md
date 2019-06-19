@@ -53,5 +53,7 @@ dpkg -i ttf-mscorefonts-installer_3.6_all.deb
 [Почему не используется apt-get](https://bugs.launchpad.net/ubuntu/+source/msttcorefonts/+bug/1607535)
 
 ## Полезные ссылки
-скоро появятся)
+https://www.latex-tutorial.com/quick-start/
+
+https://duckduckgo.com
 
