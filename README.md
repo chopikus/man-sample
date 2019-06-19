@@ -73,9 +73,9 @@ dpkg -i ttf-mscorefonts-installer_3.6_all.deb
 
 <a name="links"> <h2> Полезные ссылки (здесь сакральные знания) </h2> </a>
 
-https://www.latex-tutorial.com/quick-start/
+Как начать писать в LaTeX: https://www.latex-tutorial.com/quick-start/
 
-https://duckduckgo.com
+Много полезной инфы по МАНу: http://oblman.kharkov.ua/konkurs-zaxist/
 
-
+Как не поломать конечности при поиске инфы по LaTeX: https://duckduckgo.com
 
