@@ -71,7 +71,7 @@ dpkg -i ttf-mscorefonts-installer_3.6_all.deb
 4. И наконец, если после **всех** проделанных шагов Вы продолжаете считать, что ошибка в самом шаблоне, создавайте [issue](https://gitlab.com/chopikus/man-sample/issues)! 
 
 
-<a name="links"> <h2> Полезные ссылки </h2> </a>
+<a name="links"> <h2> Полезные ссылки (здесь сакральные знания) </h2> </a>
 
 https://www.latex-tutorial.com/quick-start/
 
