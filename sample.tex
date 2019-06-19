@@ -8,6 +8,10 @@
 \usepackage{tocloft}
 \usepackage{fancyhdr}
 \usepackage{titletoc}
+\usepackage{graphicx}
+\usepackage{float}
+
+\selectlanguage{ukrainian}
 
 \def\numberline#1{#1. }
 
@@ -18,7 +22,6 @@
 \renewcommand\section{\newpage\stdsection}
 
 \setmainfont[Ligatures=TeX]{Times New Roman}
-\selectlanguage{ukrainian}
 
 \geometry{
  a4paper,
@@ -28,6 +31,8 @@
  bottom=2cm,
  right=2cm	
 } %отступы
+
+\addto\captionsenglish{\renewcommand{\figurename}{Рис.}} %Типо не малюнок а РИСУНОК. Это так и стоит в нормах 
 
 \renewcommand{\thesection}{РОЗДІЛ \arabic{section}} %Здесь мы меняем просто номер раздела на "РОЗДІЛ"+номер
 \titleformat{\section}[display]{\filcenter}{\thesection. }{0pt}{\MakeUppercase} %Ставим название раздела по середине, делаем его КАПСЛОКОМ и переносим его на следующую строку
@@ -131,6 +136,7 @@
 \newpage %ну и дальше Ваш ман
 \section{Основна частина}
 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+
 \subsection{Подраздел}
 \section{очень-очень-очень-очень-очень-очень-очень-очень длинное название раздела (такое бывает)}
 \addcontentsline{toc}{section}{СПИСОК ВИКОРИСТАНИХ ДЖЕРЕЛ} 
