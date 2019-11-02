@@ -10,6 +10,7 @@
 \usepackage{titletoc}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{setspace}
 
 \selectlanguage{ukrainian}
 
@@ -62,12 +63,12 @@
 \pagestyle{fancy}
 %конец сложной штуки для того, чтобы номер страницы был справа сверху на всех страничках
 
-
+\linespread{1.25} % #1 спасибо @kolbaser
 
 \begin{document}
 
 \thispagestyle{empty} %чтобы номер страницы в титулке не показывался
-
+\begin{spacing}{1}
 \begin{center}
 Міністерство освіти і науки України\\ % 2 бэкслеша - новая строка
 Департамент науки і освіти Харківської облдержадміністрації\\
@@ -119,8 +120,8 @@
 \begin{center}
 Харків -- 2014 
 \end{center}
+\end{spacing}
 
-\setstretch{1.3}
 \newpage
 Автор работы: анон
 \newpage
