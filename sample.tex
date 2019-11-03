@@ -36,10 +36,10 @@
 \addto\captionsenglish{\renewcommand{\figurename}{Рис.}} %Типо не малюнок а РИСУНОК. Так и стоит в нормах
 
 \renewcommand{\thesection}{РОЗДІЛ \arabic{section}} %Здесь мы меняем просто номер раздела на "РОЗДІЛ"+номер
-\titleformat{\section}[display]{\filcenter}{\thesection. }{0pt}{\MakeUppercase} %Ставим название раздела по середине, делаем его КАПСЛОКОМ и переносим его на следующую строку
+\titleformat{\section}[display]{\filcenter}{\bfseries\thesection. }{0pt}{\bfseries\MakeUppercase} %Ставим название раздела по середине, делаем его КАПСЛОКОМ и переносим его на следующую строку (а также делаем жирным, спасибо @S1eap (#2))
 
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} %чиним номер подраздела
-\titleformat{\subsection}{}{\thesubsection. }{0pt}{}{} %чиним название подраздела
+\titleformat{\subsection}{\filcenter}{\bfseries \thesubsection. }{0pt}{\bfseries}{} %чиним название подраздела (а также центрируем и делаем жирным, спасибо @S1eap (#2))
 
 \makeatletter
 \renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
@@ -122,7 +122,7 @@
 \end{center}
 \end{spacing}
 
-\newpage
+\section*{Т\lowercase{ези}}
 Автор работы: анон
 \newpage
 
@@ -147,7 +147,7 @@ Lorem Ipsum - это текст-"рыба", часто используемый 
 \subsection{Подраздел}
 \section{очень-очень-очень-очень-очень-очень-очень-очень длинное название раздела (такое бывает)}
 \addcontentsline{toc}{section}{СПИСОК ВИКОРИСТАНИХ ДЖЕРЕЛ} 
-\section*{СПИСОК ВИКОРИСТАНИХ ДЖЕРЕЛ}
+\section*{список використаних джерел}
 Ваш список источников
 \end{document}
 
