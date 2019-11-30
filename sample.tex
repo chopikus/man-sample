@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{setspace}
+\usepackage{caption}
 
 \def\numberline#1{#1. }
 
@@ -38,6 +39,8 @@
 
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} %чиним номер подраздела
 \titleformat{\subsection}{\filcenter}{\bfseries \thesubsection. }{0pt}{\bfseries}{} %чиним название подраздела (а также центрируем и делаем жирным, спасибо @S1eap (#2))
+
+\captionsetup{labelsep=period} % "Рис. 1." вместо "Рис. 1:" (спасибо @S1eap)
 
 \makeatletter
 \renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
@@ -143,6 +146,7 @@ Lorem Ipsum - это текст-"рыба", часто используемый 
 \end{figure}
  
 \subsection{Подраздел}
+\subsubsection{Подподраздел}
 \section{очень-очень-очень-очень-очень-очень-очень-очень длинное название раздела (такое бывает)}
 \addcontentsline{toc}{section}{СПИСОК ВИКОРИСТАНИХ ДЖЕРЕЛ} 
 \section*{список використаних джерел}
