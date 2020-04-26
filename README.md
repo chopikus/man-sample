@@ -2,7 +2,7 @@
 
 В этом репозитории представлен шаблон, значительно облегчающий жизнь при написании работы МАН.
 
-При помощи него не нужно морочиться с кучей формальностей, возникающих при оформлении работы.
+С ним не нужно морочиться с кучей формальностей, возникающих при оформлении работы.
 
 А формальностей таких много:
 1. Times New Roman, 14 размер, полуторный интервал
@@ -52,29 +52,36 @@ xelatex sample.tex
 
 ## Ошибка компиляции
 ### Ошибка компиляции из-за шрифта
-Если у Вас при компиляции появляется ошибка вида:
-
+Пример ошибки:
 ```
 the font Times New Roman cannot be found blah-blah
 ```
+Нужно установить пакет со шрифтами от Microsoft `ttf-mscorefonts-installer`.
 
-, то этот дурацкий шрифт нужно еще и установить (скажите спасибо мелко-мягким).
-
-Пример установки для Ubuntu и Debian-based ОС:
-
+Пример установки:
 ```
-wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb
-dpkg -i ttf-mscorefonts-installer_3.6_all.deb
+apt install ttf-mscorefonts-installer 
 ```
 
-[Почему не используется apt-get](https://bugs.launchpad.net/ubuntu/+source/msttcorefonts/+bug/1607535)
+### Ошибка компиляции: не найден язык в babel
+Пример ошибки:
+```
+Package babel Error: Unknown option 'russian'. Either you misspelled it (babel) 
+or the language definition file russian.ldf was not found.
+```
+В этом случае необходимо установить пакет с кириллицей для `babel`.
 
-### Ошибка компиляции явно не из-за шрифта
-1. Попробуйте перезагрузить копьютер (нет, серьёзно, часто такое бывает если вы до этого работали с другими документами)
-2. Попробуйте перекомпилировать, удалив файлы .aux, .log, .toc
-3. Проверьте (очень!!) внимательно изменения, которые Вы вносили
-4. И наконец, если после **всех** проделанных шагов Вы продолжаете считать, что ошибка в самом шаблоне, создавайте [issue](https://gitlab.com/chopikus/man-sample/issues)! 
+Пример установки:
+```
+sudo apt-get install texlive-lang-cyrillic
+```
+или
+```
+sudo apt-get install texlive-lang-all
+```
 
+### Другие ошибки
+Спрашивайте у автора, создавайте issue!
 
 <a name="links"> <h2> Полезные ссылки (здесь сакральные знания) </h2> </a>
 
