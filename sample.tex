@@ -1,17 +1,6 @@
 \documentclass[a4paper, 14pt]{article}
-\usepackage{fontspec}
+\usepackage{fontspec, extsizes, geometry, titlesec, fancyhdr, titletoc, graphicx, float, setspace, caption}
 \usepackage[russian, english, ukrainian]{babel}
-\usepackage{extsizes}
-\usepackage{geometry}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{tocloft}
-\usepackage{fancyhdr}
-\usepackage{titletoc}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{setspace}
-\usepackage{caption}
 \setmainfont[Ligatures=TeX]{Times New Roman}
 \geometry{
  a4paper,
@@ -31,8 +20,7 @@
 \renewcommand\section{\newpage\stdsection}
 %
 \addto\captionsenglish{\renewcommand{\figurename}{Рис.}} %Типо не малюнок а РИСУНОК. Так и стоит в нормах
-\renewcommand{\thesection}{РОЗДІЛ \arabic{section}} %Здесь мы меняем просто номер раздела на "РОЗДІЛ"+номер
-\titleformat{\section}[display]{\filcenter}{\bfseries\thesection. }{0pt}{\bfseries\MakeUppercase} %Ставим название раздела по середине, делаем его КАПСЛОКОМ и переносим его на следующую строку (а также делаем жирным, спасибо @S1eap (#2))
+\titleformat{\section}[display]{\filcenter}{РОЗДІЛ \bfseries\thesection. }{0pt}{\bfseries\MakeUppercase} %Ставим название раздела по середине, делаем его КАПСЛОКОМ и переносим его на следующую строку (а также делаем жирным, спасибо @S1eap (#2))
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} %чиним номер подраздела
 \titleformat{\subsection}{\filcenter}{\bfseries \thesubsection. }{0pt}{\bfseries}{} %чиним название подраздела (а также центрируем и делаем жирным, спасибо @S1eap (#2))
 \captionsetup{labelsep=period} % "Рис. 1." вместо "Рис. 1:" (спасибо @S1eap)
@@ -112,7 +100,7 @@
 ...
 \newpage
 
-\renewcommand{\contentsname}{\normalsize \hspace{1.25em} \normalfont ЗМІСТ} %меняем название странички с содержанием, добавлено \normalfont (спасибо @mojicfg)
+\renewcommand{\contentsname}{\normalsize \normalfont ЗМІСТ} %меняем название странички с содержанием, добавлено \normalfont (спасибо @mojicfg)
 
 \tableofcontents %генерация содержания
 
