@@ -49,6 +49,8 @@
 <a name="compiling"><h2> Компиляция файла .tex (и получение .pdf)</h2></a>
 Рекомендуется использовать движок XeLaTeX.
 
+На Windows можно использовать редактор [`MiKTeX`](https://miktex.org/).
+
 Установить его очень просто (пример для Ubuntu):
 ```
 apt install texlive-xetex
