@@ -41,7 +41,7 @@
 
 Установить его очень просто (пример для Ubuntu):
 ```
-apt-get install texlive-xetex
+apt install texlive-xetex
 ```
 Пример компиляции (для GNU/Linux)
 ```
@@ -73,11 +73,11 @@ or the language definition file russian.ldf was not found.
 
 Пример установки:
 ```
-sudo apt-get install texlive-lang-cyrillic
+apt install texlive-lang-cyrillic
 ```
 или
 ```
-sudo apt-get install texlive-lang-all
+apt install texlive-lang-all
 ```
 
 ### Другие ошибки
