@@ -8,7 +8,7 @@
 \makeatletter\newcommand\Dotfill{\leavevmode\leaders\hb@xt@0.65em{\hss.\hss}\hfill}\makeatother % удобная команда
 \let\stdsection\section\renewcommand\section{\newpage\stdsection} % Новая секция -> новая страница
 \addto\captionsenglish{\renewcommand{\figurename}{Рис.}} % Подпись картинок
-\titleformat{\section}[display]{\filcenter}{\bfseries{РОЗДІЛ \thesection.}}{0pt}{\bfseries\MakeUppercase} % Изменение заголовка всех разделов
+\titleformat{\section}[display]{\filcenter}{\bfseries{РОЗДІЛ \thesection}}{0pt}{\bfseries\MakeUppercase} % Изменение заголовка всех разделов
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} % Чиним номер подраздела
 \titleformat{\subsection}{\filcenter}{\bfseries \thesubsection. }{0pt}{\bfseries}{} %чиним название подраздела 
 \captionsetup{labelsep=period} % "Рис. 1." вместо "Рис. 1:"
@@ -19,6 +19,8 @@
 \titlecontents{section}[0pt]{\normalfont}{РОЗДІЛ \thecontentslabel. }{}{\Dotfill \contentspage} % оформление разделов, точек в содержании
 \titlecontents{subsection}[15pt]{\normalfont}{\thecontentslabel. }{}{\Dotfill \contentspage} % оформление подразделов, точек в содержании
 \titlecontents{subsubsection}[30pt]{\normalfont}{\thecontentslabel. }{}{\Dotfill \contentspage} % оформление подподразделов, точек в содержании
+\counterwithin{figure}{section} % нумерация картинок с номером раздела
+\counterwithin{table}{section} % нумерация таблиц с номером раздела
 
 \begin{document}
 % Титулка
